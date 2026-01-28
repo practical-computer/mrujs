@@ -35,6 +35,7 @@ group :test do
   gem 'capybara', '>= 3.26'
   gem "evil_systems", "~> 0.2"
   gem "selenium-webdriver", "~> 4.1"
+  gem "minitest", "< 6"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

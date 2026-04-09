@@ -83,7 +83,7 @@ function disableFormElement (element: HTMLFormElement): void {
   // If an invalid form uses the default constraint validation behavior, the browser prevents submission, so we
   // should not disable the element
   const form = element?.form
-  if (form?.noValidate == false && form?.checkValidity() == false) return
+  if (form?.noValidate === false && form?.checkValidity() === false) return
 
   const replacement = element.getAttribute('data-disable-with')
 
